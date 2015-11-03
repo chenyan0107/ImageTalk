@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#4e6cef</color>
+    <color name="main2_color">#455ede</color>
+
+    <color name="color_item_normal">#ffffff</color>
+    <color name="color_item_press">#4e6cef</color>
+    
+    <color name="support_color">#FF4081</color>
+    <color name="support2_color">#F06292</color>
+
+    <color name="btn_unfocuse">#b8b8b8</color>
+    <color name="window_background">#efeff4</color>
+
+    <color name="divide_line">#d9d9d9</color>
+
+    <color name="btn_send_normal">#4e6cef</color>
+    <color name="btn_send_pressed">#455ede</color>
+    <color name="fab_color_shadow">#44000000</color>
+
+    <color name="bg_comments">#efeff4</color>
+
+</resources>

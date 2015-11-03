@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myImg="http://schemas.android.com/apk/com.chen.cy.talkimage"
+    android:id="@+id/drawerheader"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <TextView
+        android:id="@+id/id_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/id_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_link"
+        android:text="请登录"/>
+
+    <!--<ImageView-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:layout_above="@id/id_username"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:src="@mipmap/ic_launcher"/>-->
+    <!--<com.chen.cy.talkimage.views.CustomImageView-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="72dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--myImg:src="@mipmap/test"-->
+        <!--myImg:type="circle" />-->
+
+    <com.chen.cy.talkimage.views.RoundImageView
+        android:id="@+id/id_img"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@id/id_username"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@mipmap/id_img" >
+    </com.chen.cy.talkimage.views.RoundImageView>
+</RelativeLayout>

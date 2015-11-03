@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_progress_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="60dp"
+    android:minWidth="180dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/dialog_background">
+    <ImageView
+        android:id="@+id/dialog_progress_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dialog_progress"
+        />
+    <TextView
+        android:id="@+id/dialog_progress_tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="登录中……" />
+
+</LinearLayout>

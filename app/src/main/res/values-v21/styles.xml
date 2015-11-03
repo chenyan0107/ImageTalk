@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="MyAppTheme">
+    </style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/main2_color</item>
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="toolbarStyle">@color/main_color</item>
+        <!--<item name="android:icon">@color/main_color</item>-->
+
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--设置动画-->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+
+        <!-- Customize your theme here. -->
+        <!--&lt;!&ndash;导航栏底色&ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/accent_material_dark</item>-->
+        <!--&lt;!&ndash;状态栏底色&ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">@color/accent_material_light</item>-->
+        <!--&lt;!&ndash;导航栏上的标题颜色&ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@android:color/black</item>-->
+        <!--&lt;!&ndash;Activity窗口的颜色&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/material_blue_grey_800</item>-->
+        <!--&lt;!&ndash;按钮选中或者点击获得焦点后的颜色&ndash;&gt;-->
+        <!--<item name="colorAccent">#00ff00</item>-->
+        <!--&lt;!&ndash;和 colorAccent相反，正常状态下按钮的颜色&ndash;&gt;-->
+        <!--<item name="colorControlNormal">#ff0000</item>-->
+        <!--&lt;!&ndash;Button按钮正常状态颜色&ndash;&gt;-->
+        <!--<item name="colorButtonNormal">@color/accent_material_light</item>-->
+        <!--&lt;!&ndash;EditText 输入框中字体的颜色&ndash;&gt;-->
+        <!--<item name="editTextColor">@android:color/white</item>-->
+    </style>
+
+    <!--ToolBar 字体配置-->
+    <style name="ToolbarTitleAppearance">
+        <item name="android:textSize">23sp</item>
+        <!--<item name="android:textStyle">normal</item>-->
+        <item name="android:textColor">@color/color_item_normal</item>
+    </style>
+
+    <style name="MyNormalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/main2_color</item>
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="toolbarStyle">@color/main_color</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@color/support_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+    </style>
+</resources>

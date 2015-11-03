@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <com.chen.cy.talkimage.views.RoundImageView
+            android:id="@+id/item_comment_avatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/id_img"
+            >
+
+            </com.chen.cy.talkimage.views.RoundImageView>
+        <RelativeLayout
+            android:id="@+id/item_comment_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="will"/>
+            <TextView
+                android:id="@+id/item_comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/item_comment_name"
+                android:layout_marginRight="32dp"
+                android:text="真是不错" />
+            <TextView
+                android:id="@+id/item_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_comment_text"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="10dp"
+                android:text="刚刚" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="68dp"
+        android:background="#cccccc" />
+</FrameLayout>

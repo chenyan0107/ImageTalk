@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/main2_color</item>
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="toolbarStyle">@color/main_color</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <style name="MyNormalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/main2_color</item>
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="toolbarStyle">@color/main_color</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <!--ToolBar 字体配置-->
+    <style name="ToolbarTitleAppearance">
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:textStyle">normal</item>-->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MyNormalTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="MyNormalTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

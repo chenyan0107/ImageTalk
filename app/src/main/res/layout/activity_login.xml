@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.chen.cy.talkimage.activity.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/login_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color"
+                    android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="登录界面"
+                    android:textColor="@color/color_item_normal"
+                    android:textSize="38px" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_comments"
+                android:elevation="@dimen/default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/login_username_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top">
+
+                    <EditText
+                        android:id="@+id/login_username_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:colorAccent="@color/main_color"
+                        android:hint="请输入用户名"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/login_passworld_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/login_passworld_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:colorAccent="@color/main_color"
+                        android:hint="请输入密码"
+                        android:password="true"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/login_forgetPassworld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="忘记密码?"
+                    android:textColor="@color/main_color" />
+
+                <Button
+                    android:id="@+id/login_loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/login_btn_defalut"
+                    android:text="登   录"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+</RelativeLayout>

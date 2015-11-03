@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chen.cy.talkimage.activity.other.CommentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/comment_toolbar_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/comment_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color"
+                android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="评论"
+                android:textColor="@color/color_item_normal"
+                android:textSize="38px" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/comment_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_comments"
+            android:elevation="@dimen/default_elevation">
+
+
+            <include
+                android:id="@+id/item_comment_load"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/listview_footer" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/shadow_top" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_lladd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_comments"
+                android:elevation="@dimen/default_elevation"
+                android:gravity="center_vertical"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <EditText
+                    android:id="@+id/comment_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#555555"
+                    android:textSize="14sp" />
+
+                <com.chen.cy.talkimage.views.SendCommentButton
+                    android:id="@+id/comment_send_btn"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/btn_send_comment"
+                    android:elevation="4dp"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

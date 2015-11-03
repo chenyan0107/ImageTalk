@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chen.cy.talkimage" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyNormalTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".activity.RegisterEndActivity"
+            android:label="@string/title_activity_register_end" >
+        </activity>
+        <activity
+            android:name=".activity.usersetting.UserSettingActivity"
+            android:label="@string/title_activity_user_setting" >
+        </activity>
+        <activity android:name=".activity.PublishActivity" >
+        </activity>
+        <activity android:name=".activity.ItemInsert.InsertItalkActivity" >
+        </activity>
+        <activity android:name=".activity.ItemInsert.RecordActivity" >
+        </activity>
+        <activity
+            android:name=".activity.other.CommentActivity"
+            android:label="@string/title_activity_comment"
+            android:theme="@style/MyNormalTheme" >
+        </activity>
+        <activity android:name=".activity.ImageTalkActivity">
+        </activity>
+    </application>
+
+</manifest>

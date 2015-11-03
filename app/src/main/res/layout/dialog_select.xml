@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:minHeight="60dp"
+    android:minWidth="160dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_select_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left"
+        android:text="请选择"
+        android:textColor="@color/btn_unfocuse" />
+
+    <ImageView
+        android:id="@+id/dialog_select_divi"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/dialog_edit_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_line" />
+
+    <RadioGroup
+        android:id="@+id/dialog_select_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="160dp"
+        >
+
+        <RadioButton
+            android:id="@+id/dialog_select_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_unfocuse"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/dialog_select_woman"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/btn_unfocuse"
+            android:text="女" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_select_yesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_defalut"
+            android:textColor="@android:color/white"
+            android:text="确定"/>
+        <Button
+            android:id="@+id/dialog_select_cancelBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_unfocuse"
+            android:textColor="@android:color/white"
+            android:text="取消"/>
+    </LinearLayout>
+</LinearLayout>

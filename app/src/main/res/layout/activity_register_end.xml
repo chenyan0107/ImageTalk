@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_comments"
+    android:elevation="@dimen/default_elevation"
+    tools:context=".activity.RegisterEndActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/register_end_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册界面"
+            android:textColor="@color/color_item_normal"
+            android:textSize="38px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_passworld_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/register_passworld_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:colorAccent="@color/main_color"
+                android:hint="请输入密码"
+                android:password="true"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_ispassworld_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/register_ispassworld_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:colorAccent="@color/main_color"
+                android:hint="请输入确认密码"
+                android:password="true"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/register_registerEndBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="注    册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:background="@drawable/login_btn_defalut"/>
+    </LinearLayout>
+</LinearLayout>

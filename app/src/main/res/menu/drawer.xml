@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/drawer_home"
+            android:title="主页" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@mipmap/drawer_msg"
+            android:title="消息" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@mipmap/drawer_frends"
+            android:title="好友" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/drawer_settings"
+            android:title="设置" />
+    </group>
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_download"
+                android:icon="@mipmap/drawer_download"
+                android:title="下载" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@mipmap/drawer_help"
+                android:title="帮助" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_edit_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:minHeight="60dp"
+    android:minWidth="160dp"
+    android:background="@drawable/dialog_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_edit_title"
+        android:layout_marginLeft="20dp"
+        android:text="请输入用户名"
+        android:textColor="@color/btn_unfocuse"/>
+    <ImageView
+        android:id="@+id/dialog_edit_divi"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dialog_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_line"/>
+    <LinearLayout
+        android:layout_below="@id/dialog_edit_divi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/dialog_edit_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="请输入用户名"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_edit_yesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn_defalut"
+                android:textColor="@android:color/white"
+                android:text="确定"/>
+            <Button
+                android:id="@+id/dialog_edit_cancelBtn"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn_unfocuse"
+                android:textColor="@android:color/white"
+                android:text="取消"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

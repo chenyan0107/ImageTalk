@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_comments"
+    android:elevation="@dimen/default_elevation"
+    tools:context="com.chen.cy.talkimage.activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/register_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/register_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:minHeight="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_item_normal"
+            android:textSize="38px"
+            android:text="注册界面"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/register_username_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:colorAccent="@color/main_color"
+                android:textSize="20sp"
+                android:hint="请输入手机号"/>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_sms_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/register_sms_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:colorAccent="@color/main_color"
+                    android:textSize="20sp"
+                    android:hint="请输入验证码"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/register_sms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="发送验证码"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_sms_size"
+                android:background="@drawable/login_btn_unfocuse"
+                android:clickable="false"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/register_registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:background="@drawable/login_btn_unfocuse"
+            android:clickable="false"/>
+    </LinearLayout>
+</LinearLayout>
